@@ -1,0 +1,26 @@
+---
+title: "øvelse_del3"
+output: html_document
+date: "2023-11-16"
+---
+
+```{r}
+# lav fire vectorer: navn med 10 charachters,højde med tal 10 tal, vegetar med 10 logical, vægt med 10 tal
+
+navn <- 
+højde <- 
+vegetar <- 
+vægt <-
+
+# brug data.frame() til at lave en dataframe der hedder min_dataframe
+#brug ?data.frame til hjælp
+
+
+# Hvad gør funktionen View()?
+
+# Hvad gør funktionen summary()? 
+
+# Prøv at plotte højde mod vægt brug ?plot til hjælp
+  
+```
+
