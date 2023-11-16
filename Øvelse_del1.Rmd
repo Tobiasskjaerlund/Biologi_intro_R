@@ -1,0 +1,111 @@
+---
+title: "Intro øvelser"
+output: html_notebook
+---
+
+## Øvelse 2.01 Hashtags
+
+Formålet med øvelsen er at køre kodeblokken.
+
+Tryk på den grønne pil til højre eller marker linjer og tryk ctrl + enter
+
+```{r}
+# Marker en eller flere linjer 
+# Fjern hastags fra de 3 linjer der har kode herunder:
+
+# 2+2
+# 10*10
+# 5+5
+
+# Sæt hastags ved at markere alle tre linjer og tryk ctrl + shift + c
+
+Denne linje skal have hashtag
+Denne linje skal have hashtag
+Denne linje skal have hashtag
+```
+
+## Øvelse 2.14 Variable
+
+Læg mærke til environment vinduet
+
+Værdier tilføjes til variable med \<-
+
+eks: x \<- 10
+
+```{r}
+# 1 lav en variabel z med værdien 20
+z <- 20
+
+# 2 Ændre værdien for z til 50
+
+
+
+# 3 Gang z med 2
+
+
+
+# 4 lav en ny variabel der hedder ny_variabel med værdien 10
+
+
+
+# 5 Sæt z til at have den værdi der er gemt i ny_variabel
+
+
+
+# 6 Lav en ny variabel der hedder NY_VARIABEL med værdien 25
+
+
+
+# Læg z + ny_variabel + NY_VARIABEL sammen
+
+
+
+# 7 Tag kvadratroden sqrt() af z
+
+
+# 8 gem kvadratroden af z i en variabel der hedder kvadratrod_z
+
+
+
+# 9 udregn z ved kun at kvadratrod_z 
+
+
+
+# 10 ekstra prøv at lave 2 variable med samme værdi men forskelligt navn på en linje kode.
+
+
+```
+
+## Øvelse 3.04 Strings
+
+Denne øvelse handler om datatype
+
+```{r}
+
+# 1 Lav en variable der hedder navn der indeholder teksten "John"
+
+
+
+# 2 Lav en variabel der hedder hobby som indeholder fodbold
+
+
+
+# 3 Prøv at lægge navn og hobby sammen
+
+
+
+# 4 lav en variabel der hedder sætning som indeholder en hel sætning
+
+
+
+# Her er to variable Kør linjerne:
+
+z <- "1" 
+x <- "1"
+
+# 5 Læg z og x sammen, hvad sker der?
+
+
+
+
+```
