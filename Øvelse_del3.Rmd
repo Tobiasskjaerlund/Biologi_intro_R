@@ -1,0 +1,122 @@
+---
+title: "øvelse_del3"
+output: html_notebook
+---
+
+## 5.07 Øvelse dataframes
+
+```{r}
+# lav fire vectorer: navn med 10 charachters,højde med tal 10 tal, vegetar med 10 logical, vægt med 10 tal
+
+navn <- 
+højde <- 
+vegetar <- 
+vægt <-
+
+# brug data.frame() til at lave en dataframe der hedder min_dataframe
+#brug ?data.frame til hjælp
+
+
+# Hvad gør funktionen View()?
+
+# Hvad gør funktionen summary()? 
+
+# Prøv at plotte højde mod vægt brug ?plot til hjælp
+
+
+```
+
+## Øvelse 6.06 Plots, Pakker og jeres data
+
+Først skal vi installere readxl ved at bruge install.packages() og så skal library() bruges til at hente pakken ind i det her script. Husk at install.packages() kun skal køres en gang på computeren.
+
+```{r}
+
+```
+
+Brug read_xlsx() funktionen til at gemme data i en dataframe der hedder svar_df
+
+```{r}
+
+```
+
+Prøv at bruge funktionerne dim(), View() og summary() til at få et overblik over data. Læg mærke til at View() har et stort V.
+
+```{r}
+
+```
+
+Hvilken datatype er de forskellige kolonner? Hvor mange kolonner og rækker er der? Tror I det er nemt at arbejde med dataen?
+
+Prøv at sortere svarene i kolonnen rige med funktionen sort() (hint: husk \$)
+
+```{r}
+
+```
+
+Lad os prøve at visualisere vores data:
+
+Vi vil gerne vide hvor mange der er i hver gruppe. Der er en funktion i R der gør netop det.
+
+xtabs(\~ kolonnenavn, data = dataframe)
+
+Prøv at gemme output fra funktionen i en variabel der hedder: antal_metode_1
+
+```{r}
+
+```
+
+Vi kan nu lave et barplot med funktionen barplot() Prøv at sætte antal_metode_1 ind i funktionen barplot( )
+
+```{r}
+
+```
+
+Argumentet col = kan bruges til at ændre farver barplot(data, col="blue") Prøv at ændre farven til rød
+
+```{r}
+
+```
+
+Der er 6 kolonner så hvis vi giver R 6 farver får hver bar forskellige farver. I stedet for at skrive navne på 6 farver, kan man give R 6 tal i stedet. Det kan man fordi alle farver har et nummer eks. 1 = sort, 2 = laks, 3 = grøn osv.
+
+Giv funktionen en vector med seks tal i: barplot(data, col = en vector med tal fra 1 til 6.)
+
+```{r}
+
+```
+
+Det er normalt at bruge tidyverse til at bryde med data og visualisere det. I tidyverse, er der en funktion count() som kan tælle hvor mange elementer, der er i en gruppe.
+
+Først lad os prøve at installere tidyverse pakken
+
+```{r}
+# install.packages("tidyverse") slet linjen efter den er kørt
+
+```
+
+Vi skal bruge library() til at få tidyverse ind i scriptet
+
+```{r}
+
+```
+
+Tidyverse har en lidt anderledes syntax... og bruger pipelines %\>% frygt ej I kan lære det en anden dag, men prøv at køre koden:
+
+```{r}
+antal_metode_2 <- svar_df %>% count(rige)
+```
+
+Tidyverse kan også plotte med ggplot() men bruger også lidt anderledes syntax Prøv at køre alle tre linjer kode samtidigt:
+
+```{r}
+ggplot(data= antal_metode_2, aes(x=rige,y=n))+
+   geom_bar(stat = "identity",aes(fill =rige))+
+   theme_classic()
+```
+
+Ekstra: Prøv at bruge funktionen hist() i Base_R til at visualisere data i kolonnen studerende i svar_df. Kolonnen indeholder jeres gæt på antallet af studerende på jeres årgang. Prøv argumentet breaks = i hist () funktionen. Husk at i kan få hjælp ved at køre funktionne ?hist. Prøv kun at plotte værdier der er mindre en 300.
+
+```{r}
+
+```
