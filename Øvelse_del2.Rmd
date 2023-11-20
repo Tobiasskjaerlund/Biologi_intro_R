@@ -1,0 +1,60 @@
+---
+title: "Øvelse_del2"
+output: html_notebook
+---
+
+1.  Øvelse index vector:
+
+en vector laves med funktionen c( ) en vector kan indeholde mange elementer adskilt af ,
+
+```{r}
+# lav en vector og gem den i numeric_vector med værdierne 1 til 10
+
+
+# Prøv at ændre numeric_vector ved at bruge c(1:10) 
+
+
+# Prøv at hente tallet 5 ud af numeric_vector ved at bruge [ ]
+
+
+# prøv at lave en vector der hedder charachter_vector med bogstaver a til j
+
+
+# prøv at hente "b" ud ved at bruge []
+
+
+# prøv at hente a til c ud ved at bruge [] hint brug :
+
+
+
+# prøv at hente b og h ud ved at bruge [] hint brug en vector
+
+
+
+```
+
+2.  Øvelse vectorer og funktioner
+
+Her skal i bruge funktioner som: mean(), unique(), sort(), length(), sum(), min(), median og max() brug ?funktion til at få hjælp
+
+```{r}
+# lav en vector med navnet min_vector med værdier 1,1,3,4,5,4,5,1,8,12,2,3,6,7,8,1
+
+# Hvad er gennemsnittet af min_vector?
+
+# Hvad er den højeste værdi i min_vector?
+
+# Prøv at sortere min_vector fra lille til stor?
+
+# Hvad er medianen i min_vector?
+
+# Hvor mange elementer er der i min_vector?
+
+# Hvad er det højeste tal divideret med det laveste tal i min_vector?
+
+# Hvad gør funktionen unique()?
+
+# Ekstra kan du printe min_vector sorteret fra størst til mindst
+
+
+```
